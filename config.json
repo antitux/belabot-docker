@@ -5,8 +5,7 @@
       "wlan0": "AT&T",
       "eth0": "Ethernet 2",
       "wlan1": "Verizon",
-      "eth1": "Ethernet 1",
-      "wlan2": "T-Mobile"
+      "eth1": "Ethernet 1"
     },
     "monitor": {
       "modems": true,
