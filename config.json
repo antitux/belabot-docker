@@ -3,16 +3,16 @@
     "remote_key": "1IRy0gaFbeijPE6KitBny6ur8jYMOf",
     "custom_interface_name": {
       "wlan0": "AT&T",
-      "eth0": "Ethernet 2",
-      "wlan1": "Verizon",
-      "eth1": "Ethernet 1"
+      "wlan1": "Verizon"
     },
     "monitor": {
       "modems": true,
       "notifications": true,
       "ups": false,
+      "network": true,
       "ups_plugged_in": 5.1,
-      "notification_timeout": 60
+      "notification_timeout": 30,
+      "network_timeout": 30
     }
   },
   "twitch": {
@@ -24,12 +24,20 @@
     ]
   },
   "commands": {
+    "Start": {
+      "command": "!bbstart",
+      "permission": "Broadcaster"
+    },
     "Stop": {
       "command": "!bbstop",
       "permission": "Broadcaster"
     },
-    "Bitrate": {
-      "command": "!bbb",
+    "Sensor": {
+      "command": "!bbsensor",
+      "permission": "Public"
+    },
+    "AudioDelay": {
+      "command": "!bbd",
       "permission": "Broadcaster"
     },
     "Stats": {
@@ -40,32 +48,24 @@
       "command": "!bbrs",
       "permission": "Broadcaster"
     },
-    "Poweroff": {
-      "command": "!bbpo",
-      "permission": "Broadcaster"
-    },
-    "Pipeline": {
-      "command": "!bbp",
-      "permission": "Broadcaster"
-    },
-    "AudioDelay": {
-      "command": "!bbd",
-      "permission": "Broadcaster"
-    },
-    "Sensor": {
-      "command": "!bbsensor",
-      "permission": "Public"
-    },
-    "Start": {
-      "command": "!bbstart",
+    "Bitrate": {
+      "command": "!bbb",
       "permission": "Broadcaster"
     },
     "AudioSrc": {
       "command": "!bba",
       "permission": "Broadcaster"
     },
+    "Pipeline": {
+      "command": "!bbp",
+      "permission": "Broadcaster"
+    },
     "Latency": {
       "command": "!bbl",
+      "permission": "Broadcaster"
+    },
+    "Poweroff": {
+      "command": "!bbpo",
       "permission": "Broadcaster"
     },
     "Network": {
