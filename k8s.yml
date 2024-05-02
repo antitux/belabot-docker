@@ -1,0 +1,28 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: belabot
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: belabot
+  namespace: belabot
+  labels:
+    app: belabot
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: belabot
+  template:
+    metadata:
+      labels:
+        app: belabot
+    spec:
+      imagePullSecrets:
+      - name: dockerhub
+      containers:
+      - name: belabot
+        image: antitux/belabot-docker:latest

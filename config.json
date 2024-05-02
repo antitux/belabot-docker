@@ -1,0 +1,77 @@
+{
+  "belabox": {
+    "remote_key": "1IRy0gaFbeijPE6KitBny6ur8jYMOf",
+    "custom_interface_name": {
+      "wlan0": "AT&T",
+      "eth0": "Ethernet 2",
+      "wlan1": "Verizon",
+      "eth1": "Ethernet 1",
+      "wlan2": "T-Mobile"
+    },
+    "monitor": {
+      "modems": true,
+      "notifications": true,
+      "ups": false,
+      "ups_plugged_in": 5.1,
+      "notification_timeout": 60
+    }
+  },
+  "twitch": {
+    "bot_username": "antituxbot",
+    "bot_oauth": "oauth:eb4hzcbqun9bjvju5n399dxzzt31ut",
+    "channel": "antitux",
+    "admins": [
+      "antitux"
+    ]
+  },
+  "commands": {
+    "Stop": {
+      "command": "!bbstop",
+      "permission": "Broadcaster"
+    },
+    "Bitrate": {
+      "command": "!bbb",
+      "permission": "Broadcaster"
+    },
+    "Stats": {
+      "command": "!bbs",
+      "permission": "Public"
+    },
+    "Restart": {
+      "command": "!bbrs",
+      "permission": "Broadcaster"
+    },
+    "Poweroff": {
+      "command": "!bbpo",
+      "permission": "Broadcaster"
+    },
+    "Pipeline": {
+      "command": "!bbp",
+      "permission": "Broadcaster"
+    },
+    "AudioDelay": {
+      "command": "!bbd",
+      "permission": "Broadcaster"
+    },
+    "Sensor": {
+      "command": "!bbsensor",
+      "permission": "Public"
+    },
+    "Start": {
+      "command": "!bbstart",
+      "permission": "Broadcaster"
+    },
+    "AudioSrc": {
+      "command": "!bba",
+      "permission": "Broadcaster"
+    },
+    "Latency": {
+      "command": "!bbl",
+      "permission": "Broadcaster"
+    },
+    "Network": {
+      "command": "!bbt",
+      "permission": "Broadcaster"
+    }
+  }
+}

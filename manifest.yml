@@ -1,0 +1,15 @@
+---
+applications:
+- name: belabot
+  buildpacks:
+  - https://github.com/cloudfoundry/binary-buildpack
+  stack: cflinuxfs4
+  processes:
+  - type: web
+    instances: 1
+    memory: 512M
+    disk_quota: 1024M
+    log-rate-limit-per-second: -1
+    command: "./belabot"
+    health-check-type: process
+    readiness-health-check-type: process
